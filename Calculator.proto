@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package Calculator;
+
+message Message {
+    string body = 1;
+}
+
+service CalculatorService {
+    rpc SayHello(Message) returns (Message) {}
+}

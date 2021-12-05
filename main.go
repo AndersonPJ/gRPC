@@ -23,7 +23,7 @@ func main() {
 		log.Fatalf("Failed to listen: %v", err)
 	}
 
-	//s := Calculator.Server{}
+	s := Calculator.Server{}
 	servergRPC := grpc.NewServer()
 
 	if err := servergRPC.Serve(listen); err != nil {
