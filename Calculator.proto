@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-package Calculator;
+package calculator;
 
 message Message {
     string body = 1;

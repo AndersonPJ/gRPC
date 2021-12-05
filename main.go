@@ -5,7 +5,7 @@ import (
 	"log"
 	"net"
 
-	"github.com/AndersonPJ/gRPC/calculator"
+	"github.com/AndersonPJ/gRPC/Calculator"
 	"google.golang.org/grpc"
 )
 
@@ -24,7 +24,7 @@ func main() {
 		log.Fatalf("Failed to listen: %v", err)
 	}
 
-	s := calculator.Server{}
+	s := Calculator.Server{}
 	fmt.Println(s)
 	servergRPC := grpc.NewServer()
 
